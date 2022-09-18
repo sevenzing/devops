@@ -1,5 +1,8 @@
 # Innopolis DevOps labs
 
+![app_python](https://github.com/sevenzing/devops/actions/workflows/python.yml/badge.svg)
+![app_rust](https://github.com/sevenzing/devops/actions/workflows/rust.yml/badge.svg)
+
 Here you can find devops labs project. It is simple web application that returns current moscow time
 
 ## Build & run
@@ -40,6 +43,22 @@ assume that poetry and packages already installed
 
 ```bash
 black .
+```
+
+## Unit tests
+
+### python
+
+```bash
+cd app_python
+pytest .
+```
+
+### rust
+
+```bash
+cd app_rust
+cargo test
 ```
 
 ## Usage
